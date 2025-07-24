@@ -29,7 +29,7 @@ import { DetectNQI } from './nqi.js';
 (async () => {
   const result = await DetectNQI({ debug: true });
   console.log(result);
-  // Example output: { rtt: "142.35", gear: 8 }
+  // Example output: { rtt: 142.35, gear: 8 }
 })();
 ```
 
@@ -45,7 +45,7 @@ A `Promise` that resolves to an object:
 
 ```ts
 {
-  rtt: string | null,  // RTT in milliseconds (string format)
+  rtt: number | null,  // RTT in milliseconds
   gear: number         // Gear level from 0 (no signal) to 10 (very fast)
 }
 ```
@@ -58,8 +58,6 @@ nqi/
 └── nqi.dat  // Small static file for RTT test
 ```
 
-> `nqi.dat` can be any small static file (e.g., empty `.dat` or `.txt`) used to measure download time.
-
 ---
 
 ## 🧪 Debug Mode
@@ -71,6 +69,13 @@ await DetectNQI({ debug: true });
 // Console output:
 // NQI: rtt=83.12 ms, gear=9
 ```
+
+---
+
+## ℹ️ Notes
+
+This utility is intended for simple, client-side network quality estimation and does not guarantee precise latency measurement.  
+For production-critical networking, consider using more robust tools like WebRTC statistics or server-side metrics.
 
 ---
 

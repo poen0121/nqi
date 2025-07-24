@@ -21,7 +21,7 @@ export async function DetectNQI({
     };
   }
 
-  const rtt = duration.toFixed(2);
+  const rtt = Number(duration.toFixed(2));
   // Classify speed gear
   function classifySpeed(rtt) {
     if (rtt < 50) return 10;
