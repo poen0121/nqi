@@ -50,6 +50,8 @@ A `Promise` that resolves to an object:
 }
 ```
 
+---
+
 ## 📁 Project Structure
 
 ```
