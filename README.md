@@ -1,7 +1,7 @@
 
 # 📶 DetectNQI
 
-   ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
    
 **DetectNQI** is a lightweight JavaScript utility to detect the **Network Quality Index (NQI)** based on round-trip time (RTT) to download a small static resource. It classifies the connection into a gear rating from **1 (slow)** to **10 (fast)**, which can be used to adapt application behavior based on current network conditions.
 
