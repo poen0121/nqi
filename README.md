@@ -55,7 +55,7 @@ A `Promise` that resolves to an object:
 ```
 nqi/
 ├── nqi.js   // Main script
-└── nqi.dat        // Small static file for RTT test
+└── nqi.dat  // Small static file for RTT test
 ```
 
 > `nqi.dat` can be any small static file (e.g., empty `.dat` or `.txt`) used to measure download time.
@@ -76,6 +76,6 @@ await DetectNQI({ debug: true });
 
 ## 📜 License
 
-MIT License © 2025 [R-DEB]
+This project is licensed under the GNU General Public License (GPL) v3.0. You can freely use, modify, and distribute the code, but any derivative works must also be licensed under the GPL, and the source code must be made available.
 
-Feel free to use, modify, and distribute.
+See the full GPL license text at https://www.gnu.org/licenses/gpl-3.0.html.
